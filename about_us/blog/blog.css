@@ -139,6 +139,7 @@ li a:hover {
 }
 
 .table_container th {
+  width: 50%;
   padding: 12px 25px;
   border: 4px solid black;
   text-align: center;
