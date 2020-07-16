@@ -55,9 +55,10 @@ ul li a {
 }
 
 a.active,
-li a:hover {
+a:hover {
   background: none;
   color: #f0e45a;
+  transition: 0.5s;
 }
 
 /*mobile navigation burger menu*/
@@ -97,7 +98,7 @@ li a:hover {
     top: 90px;
     left: -100%;
     text-align: center;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s;
   }
   nav ul li {
     display: block;
@@ -106,7 +107,6 @@ li a:hover {
   }
   nav ul li a {
     font-size: 30px;
-    transition: all 0.3s ease 0s;
   }
   a:hover,
   a.active {
@@ -148,7 +148,7 @@ section {
 }
 
 .img {
-  background: url('image/coffee1.jpg');
+  background: url("image/coffee1.jpg");
   background-size: cover;
   background-position: center bottom;
 }
@@ -209,7 +209,7 @@ section {
   position: relative;
   margin: 0;
   padding: 0;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   opacity: 0.9;
 }
