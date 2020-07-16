@@ -161,7 +161,8 @@ section {
   margin-bottom: 30px;
 }
 
-span {
+.inner_container span {
+  text-align: left;
   font-weight: bold;
 }
 
@@ -189,6 +190,12 @@ span {
   .inner_container {
     width: 100%;
     padding: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner_container p {
+    text-align: left;
   }
 }
 
