@@ -160,6 +160,10 @@ td {
 }
 /*mobile resolution display table*/
 @media (max-width: 840px) {
+  .table_container {
+    margin-bottom: 40px;
+  }
+
   .table_container thead {
     border: none;
     clip: auto;
@@ -170,6 +174,7 @@ td {
     position: absolute;
     width: 1px;
   }
+
   .table_container th,
   .table_container td {
     border: none;
@@ -179,10 +184,11 @@ td {
     border: 2px solid black;
     display: block;
   }
+
   .table_container td {
     border: 2px solid black;
     display: block;
-    text-align: right;
+    text-align: left;
   }
   .table_container td::before {
     content: attr(data-label);
