@@ -148,7 +148,7 @@ section {
 }
 
 .img {
-  background: url(image/coffee1.jpg);
+  background: url('image/coffee1.jpg');
   background-size: cover;
   background-position: center bottom;
 }
