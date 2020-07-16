@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about_us.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <!--menu-->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="../index.html"><img src="../logo.png" alt="home" /></a>
+      </label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="About-us.html">About Us</a></li>
+        <li><a href="../food_menu/food_menu.html">Food Menu</a></li>
+        <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="title">
+      <h1>About Us</h1>
+    </div>
+    <div id="option">
+      <button
+        id="story"
+        class="btn"
+        onclick="window.location.href='story/story.html';"
+      >
+        Story
+      </button>
+      <button
+        id="blog"
+        class="btn"
+        onclick="window.location.href='blog/blog.html';"
+      >
+        Blog
+      </button>
+      <button
+        id="history"
+        class="btn"
+        onclick="window.location.href='history/history.html';"
+      >
+        History
+      </button>
+      <button
+        id="mission"
+        class="btn"
+        onclick="window.location.href='our_mission/our_mission.html';"
+      >
+        Our Mission
+      </button>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <footer class="footer_content">
+        <div class="left-col">
+          <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+          <a href="https://twitter.com/explore" class="fab fa-twitter"></a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="fab fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+        </div>
+        <div class="right-col">
+          <img
+            src="../image/card.png"
+            alt="card icon"
+            style="height: 50px; width: 100%;"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

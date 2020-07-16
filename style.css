@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f5dbae;
+  position: relative;
+  min-height: 100vh;
+}
+
+/*logo image*/
+.logo img {
+  float: left;
+  margin: 5px 20px;
+  width: 80px;
+}
+
+/*navigation*/
+nav {
+  background: #1e0101;
+  width: 100%;
+  height: 90px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+nav li a,
+nav li {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: white;
+  padding: 5px 20px;
+}
+
+ul li a {
+  transition: all 0.3s ease 0s;
+}
+
+a.active,
+li a:hover {
+  background: none;
+  color: #f0e45a;
+}
+
+/*mobile navigation burger menu*/
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#check,
+.checkbtn {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    margin-top: 25px;
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #949494;
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 40px;
+  }
+  nav ul li a {
+    font-size: 30px;
+    transition: all 0.3s ease 0s;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #f0e45a;
+  }
+  #check:checked ~ ul {
+    z-index: 999;
+    left: 0;
+  }
+}
+
+/*each container default size*/
+.container {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+/*full screen image*/
+.full_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.img {
+  background: url(image/coffee1.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/*right slogran design with image*/
+.slogan {
+  position: absolute;
+  margin: 20% auto;
+  left: 40%;
+  right: 5%;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.slogan h2 {
+  font-family: "Titillium web", san-serif;
+  font-weight: lighter;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  line-height: 1.5em;
+  font-size: 2.5em;
+}
+
+/*description and business gird box*/
+.box_container {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+  margin-top: 50px;
+  padding: 10px;
+}
+/*grid box*/
+.box {
+  position: relative;
+  background: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.box:nth-child(1) {
+  background: #1e0101;
+}
+
+.box:nth-child(2) {
+  background: #1e0101;
+}
+
+.box h2 {
+  font-family: "Titillium web", san-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  color: white;
+  opacity: 0.9;
+}
+
+.box p {
+  font-family: "Titillium web", san-serif;
+  position: relative;
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+/*event card box*/
+.eve_container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+/*when screen resolution less than 1080 and 740*/
+@media (max-width: 1080px) {
+  .eve_container {
+    height: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .eve_container {
+    height: auto;
+  }
+}
+/*card design*/
+.card {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 420px;
+}
+/*image box design*/
+.eve_container .card .imgBx {
+  position: relative;
+  max-width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.eve_container .card .imgBx img {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+/*content design in card box*/
+.food_content {
+  font-family: "Titillium web", san-serif;
+  position: relative;
+  margin-top: -140px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .food_content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+
+.card:hover .eve_btn a {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+  transition-delay: 0.5s;
+}
+/*footer*/
+.footer {
+  position: absolute;
+  background: #1e0101;
+  margin-top: auto;
+  width: 100%;
+}
+
+.left-col {
+  margin: 30px 15px;
+  font-size: 20px;
+  text-decoration: none;
+  float: left;
+}
+
+.left-col a {
+  margin: 20px 5px;
+  color: #fff;
+}
+
+.left-col a:hover {
+  color: #615343;
+}
+
+.right-col {
+  margin: 30px 15px;
+  font-size: 20px;
+  float: right;
+  width: 250px;
+}

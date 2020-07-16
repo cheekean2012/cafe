@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact_detail.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--menu-->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="../../index.html"><img src="../../logo.png" alt="home" /></a>
+      </label>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about_us/About-us.html">About Us</a></li>
+        <li><a href="../../food_menu/food_menu.html">Food Menu</a></li>
+        <li>
+          <a class="active" href="../contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--contact detail-->
+    <section class="contact_container">
+      <div class="inner_container">
+        <h2>Contact Detail</h2>
+        <p>
+          This page will show out the total of contact detail We have provided
+          differennt way to let you to contact us Faerless to contact us to find
+          out more information
+        </p>
+        <div class="detail">
+          <p><span>Email Address:</span> Cafebest99@gmail.com</p>
+          <p><span>Phone number:</span> +6011-58748745</p>
+          <p>
+            <span>Mail Address:</span> 25, Jalan Penang, George Town, 12345
+            George Town, Pulau Penang
+          </p>
+          <p>
+            <span>Live chat:</span> We are provided live chat in website,
+            contact us in any time (right-bottom side) We provided 24/7 services
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--chat box-->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea
+          placeholder="Type message.."
+          id="msg"
+          name="msg"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <!--footer-->
+    <div class="footer">
+      <footer class="footer_content">
+        <div class="left-col">
+          <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+          <a href="https://twitter.com/explore" class="fab fa-twitter"></a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="fab fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+        </div>
+        <div class="right-col">
+          <img
+            src="../../image/card.png"
+            alt="card icon"
+            style="height: 50px; width: 100%;"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

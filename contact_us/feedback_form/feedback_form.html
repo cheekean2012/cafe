@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="feedback.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Feedback</title>
+  </head>
+  <body>
+    <!--menu-->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="../../index.html"><img src="../../logo.png" alt="home" /></a>
+      </label>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about_us/About-us.html">About Us</a></li>
+        <li><a href="../../food_menu/food_menu.html">Food Menu</a></li>
+        <li>
+          <a class="active" href="../contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header">
+      <h1>Feedback Form</h1>
+      <p>Your feedback matters!!</p>
+      <p>Feel free to leave comments.</p>
+    </div>
+
+    <div class="form_container">
+      <form method="post" action="mailto:you@yourwebsite.com">
+        <fieldset>
+          <label for="Name">Name:</label><br />
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            size="30"
+            maxlength="50"
+            placeholder=" Full name*"
+            required
+          />
+          <br /><br />
+          <label for="e-mail">Email:</label><br />
+          <input
+            type="email"
+            id="e-mail"
+            name="e-mail"
+            size="30"
+            placeholder=" Must be @ inside the answer*"
+            required
+          />
+          <br /><br />
+          <label for="phone">Telephone:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            size="30"
+            pattern="[0-9]{3}-[0-9]{8}"
+            placeholder=" Please follow fomat"
+          /><br />
+          <small>Format:011-28576058</small>
+          <br /><br />
+          <label for="e">Please rate our services</label><br />
+          <input
+            type="radio"
+            id="e"
+            name="e"
+            value="excellent"
+            checked="checked"
+          />Excellent <br />
+          <input type="radio" id="g" name="g" value="good" />Good <br />
+          <input type="radio" id="b" name="b" value="rate" />Bad <br />
+          <br /><br />
+          <label for="best"
+            >Tell us what product or services you like most!!</label
+          ><br />
+          <input
+            type="text"
+            id="best"
+            name="best"
+            placeholder=" Write answer here!*"
+            required
+          />
+          <br />
+          <br /><br />
+          <label for="improve">What services we can improve?</label><br />
+          <input
+            type="text"
+            id="improve"
+            name="improve"
+            placeholder=" Write answer here!"
+          />
+          <br /><br />
+          <label for="y">Would you recommend to you friend?</label><br />
+          <input
+            type="radio"
+            id="y"
+            name="y_n"
+            value="Yes"
+            checked="checked"
+          />Yes<br />
+          <input type="radio" id="n" name="y_n" value="No" />No<br />
+          <br /><br />
+          <input class="btn" type="submit" value="Submit" />
+          <input class="btn" type="reset" value="Clear" />
+        </fieldset>
+      </form>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <footer class="footer_content">
+        <div class="left-col">
+          <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+          <a href="https://twitter.com/explore" class="fab fa-twitter"></a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="fab fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+        </div>
+        <div class="right-col">
+          <img
+            src="../../image/card.png"
+            alt="card icon"
+            style="height: 50px; width: 100%;"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

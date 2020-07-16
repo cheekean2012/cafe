@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact_us.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!--menu-->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="../index.html"><img src="../logo.png" alt="home" /></a>
+      </label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_us/About-us.html">About Us</a></li>
+        <li><a href="../food_menu/food_menu.html">Food Menu</a></li>
+        <li>
+          <a class="active" href="../contact_us/contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--full screen image-->
+    <div class="container">
+      <section class="full_image">
+        <div class="image img">
+          <div class="describe">
+            <h2>
+              Facing problem when visiting our cafe?<br />
+              This page might help you out!!<br />
+              Choose the page that you want to know more about.
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--contact way button-->
+    <section class="container">
+      <div class="title">
+        <h2>Type of Contact Way</h2>
+      </div>
+
+      <div id="option">
+        <button
+          id="location"
+          class="btn"
+          onclick="window.location.href='location/location.html';"
+        >
+          Location
+        </button>
+        <button
+          id="feedbackform"
+          class="btn"
+          onclick="window.location.href='feedback_form/feedback_form.html';"
+        >
+          Feedback
+        </button>
+        <button
+          id="contact"
+          class="btn"
+          onclick="window.location.href='contact_detail/contact_detail.html';"
+        >
+          Contact
+        </button>
+      </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer">
+      <footer class="footer_content">
+        <div class="left-col">
+          <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+          <a href="https://twitter.com/explore" class="fab fa-twitter"></a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="fab fa-instagram"
+          ></a>
+          <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+        </div>
+        <div class="right-col">
+          <img
+            src="../image/card.png"
+            alt="card icon"
+            style="height: 50px; width: 100%;"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
