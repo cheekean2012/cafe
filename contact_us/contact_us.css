@@ -148,6 +148,7 @@ section {
 }
 
 .img {
+  filter: blur(4px);
   background: url(../image/coffee3.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -158,8 +159,9 @@ section {
   position: absolute;
   margin: 15% auto;
   left: 40%;
-  padding: 30px;
+  padding: 40px;
   transition: 0.5s;
+  text-shadow: 2px 1px black;
 }
 
 .describe h2 {
